@@ -33,7 +33,7 @@
 // let a = 5 > 4; // true
 // let s = "apple" > "pineapple" //false
 
-// console.log("12" > "2"); //bu yerda dalse qataradi sababi string ichida malumot kiritilsa birchi malumotga qarap javob qaytadi yani 12=1 bolib qoladi 2=2 boladi
+// console.log("12" > "2"); //bu yerda false qataradi sababi string ichida malumot kiritilsa birchi malumotga qarap javob qaytadi yani 12=1 bolib qoladi 2=2 boladi
 // console.log(undefined == null);  null qiymatga ega undefined ummuman qiymatga ega emas
 // console.log(undefined === null); bu yerda false qatiy tenglik bo'lgani uchun 
 // console.log(null == "\n0\n");  false
