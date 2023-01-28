@@ -25,9 +25,9 @@
 // let g = " -9 " + 5 // data type stirng bolib qoladi chunki "+" ishorasi borligi uchun javob -9 5 chiqadi.
 // console.log(null + 1); // javobi 1 chiaqdi.
 // console.log(undefined + 1); // undifined son emas shuning uchun javob NaN.
-// let h="\t\n"-2;// javob -2 chunki "-" ishlatganimiz uchun stirng ishlamaydi.
+let h="\t \n"-2; // javob -2 chunki "-" ishlatganimiz uchun stirng ishlamaydi.
 // console.log(a, b, c, v, n, m, s, d, f, g,h);
-
+console.log(h);
 //  5- Comparisons
 
 // let a = 5 > 4; // true
