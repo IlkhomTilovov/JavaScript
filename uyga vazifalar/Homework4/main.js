@@ -29,3 +29,19 @@
 // if(""){
 //     console.log("Hello js");
 // }
+// let a = 2;
+// let b = 2;
+// let result = (a - b);
+
+// if (result < 4) {
+//     console.log("below");
+// } else {
+//     console.log("over");
+// }
+
+let left = "ECMAScrip1"
+if (left == "ECMAScript"){
+    console.log("Right");
+} else {
+    console.log(`You don't know "EMCAScript"`);
+}
