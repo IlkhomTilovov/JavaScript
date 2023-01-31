@@ -39,9 +39,47 @@
 //     console.log("over");
 // }
 
-let left = "ECMAScrip1"
-if (left == "ECMAScript"){
-    console.log("Right");
-} else {
-    console.log(`You don't know "EMCAScript"`);
-}
+// let left = "ECMAScrip1"
+// if (left == "ECMAScript"){
+//     console.log("Right");
+// } else {
+//     console.log(`You don't know "EMCAScript"`);
+// }
+
+
+// let left = "other";
+// left == "ECMAScrip"
+//     ? console.log("Right") :
+//     left == "other"
+//         ? console.log(`You don't know "EMCAScript"`) :
+//         console.log("Xech qanday malumot yo'q");
+
+// let message;
+// login = ''
+// if (login == 'Employee') {
+//     message = 'Hello';
+// } else if (login == 'Director') {
+//     message = 'Greetings';
+// } else if (login == '') {
+//     message = 'No login';
+// } else {
+//     message = ''
+// }
+// console.log(message);
+// let messege;
+// let login = 'Director'
+// login == 'Employee'
+//     ? messege = "Hello" :
+//     login == 'Director'
+//         ? messege = "Greetings" :
+//         login == ''
+//             ? messege = 'No login' :
+//             messege = ''
+// console.log(messege);
+
+let result;
+a = 2;
+b = 3;
+a + b < 4
+    ? console.log("below") :
+    console.log("over");
