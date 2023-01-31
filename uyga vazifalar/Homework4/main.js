@@ -39,9 +39,9 @@
 //     console.log("over");
 // }
 
-// let left = "ECMAScrip1"
-// if (left == "ECMAScript"){
-//     console.log("Right");
-// } else {
-//     console.log(`You don't know "EMCAScript"`);
-// }
+let left = "ECMAScrip1"
+if (left == "ECMAScript"){
+    console.log("Right");
+} else {
+    console.log(`You don't know "EMCAScript"`);
+}
