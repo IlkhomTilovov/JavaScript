@@ -107,5 +107,58 @@
 // ==================================Tub sonlar=========================================
 
 
-let n=100;
-let c=0;
+// let n = 10;
+
+// let c = 0;
+
+// let i = 1;
+
+
+// for (let i = 1; i <= 100; i++) {
+//     for (let j = 2; j <= i; j++) {
+//         if (i % j == 0) {
+//             c++;
+//         }
+//     }
+//     if (c == 2) {
+//         console.log(`bu tub son :${i}`);
+//     }
+//     c = 0;
+// }
+
+// let n = 10;
+
+// let c = 0;
+
+// let i = 1;
+
+// for (let j =2; j <= n; j++) {
+//     for (let i = 1; i <= j; i++) {
+//         if (j % i === 0) {
+//             c++;
+//         }
+//     }
+//     if (c == 2) {
+//         console.log(`tub son ${j}`);
+//     }
+//     c = 0;
+// }
+
+// let a = 2
+// console.log(++a);//4
+// console.log(a);//5
+let n = 10;
+
+c = 0;
+
+for (let j = 2; j <= n; j++) {
+    for (let i = 1; i <= j; i++) {
+        if (j % i === 0) {
+            c++;
+        }
+    }
+    if (c == 2) {
+        console.log(`tub son ${j}`);
+    }
+    c = 0;
+}
