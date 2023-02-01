@@ -147,18 +147,47 @@
 // let a = 2
 // console.log(++a);//4
 // console.log(a);//5
-let n = 10;
 
-c = 0;
+// let n = 10;
 
-for (let j = 2; j <= n; j++) {
-    for (let i = 1; i <= j; i++) {
-        if (j % i === 0) {
-            c++;
-        }
-    }
-    if (c == 2) {
-        console.log(`tub son ${j}`);
-    }
-    c = 0;
-}
+// c = 0;
+
+// for (let j = 2; j <= n; j++) {
+//     for (let i = 1; i <= j; i++) {
+//         if (j % i === 0) {
+//             c++;
+//         }
+//     }
+//     if (c == 2) {
+//         console.log(`tub son ${j}`);
+//     }
+//     c = 0;
+// }
+
+// 1 masala ========================================
+
+
+// let k = 1;
+// let n = 10;
+
+// for (k; k <= n; k++) {
+//     console.log(k);
+// }
+
+// 2 masala ========================================
+
+// let a = 4;
+// let b = 10;
+
+// for (a; a <= b; a++) {
+//     console.log(a);
+// }
+// 3-masala  ========================================
+// let a = 4;
+// let b = 10;
+
+// for (--b; a < b; b--) {
+//     console.log(b);
+// }
+
+
