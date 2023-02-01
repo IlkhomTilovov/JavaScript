@@ -77,9 +77,28 @@
 //             messege = ''
 // console.log(messege);
 
-let result;
-a = 2;
-b = 3;
-a + b < 4
-    ? console.log("below") :
-    console.log("over");
+// let result;
+// a = 2;
+// b = 3;
+// a + b < 4
+//     ? console.log("below") :
+//     console.log("over");
+
+// console.log((2 ?? 3) || (1 ?? 4));
+
+// let a=-1;
+// if(a>0){
+//     console.log(++a);
+// }else if(a<0){
+//     console.log(a-2);
+// }else{
+//     console.log(a+10);
+// }
+
+let a = 2;
+let b = -1;
+let c = 3;
+
+if ((a, b, c) >= 0) {
+    console.log();
+}
