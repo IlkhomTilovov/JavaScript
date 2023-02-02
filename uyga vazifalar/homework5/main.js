@@ -182,7 +182,15 @@
 // for (a; a <= b; a++) {
 //     console.log(a);
 // }
+
+
+
 // 3-masala  ========================================
+
+// a va b butun son sonlari berilgan (a<b),a vab sonlari orasidagi barcha butun sonlarni
+// (a va b dan  tashqari) kamayish tartibida chiqaruvchi programa tuzilsin
+
+
 // let a = 4;
 // let b = 10;
 
@@ -190,4 +198,86 @@
 //     console.log(b);
 // }
 
+// 4-masala  ========================================
 
+// bit kg konfetning narxi 3 sum 1dan 10kg gachakondetni narxini chiqarish
+
+// let narx = 3;
+// let kg = 1;
+// for (kg; kg <= 10; kg++){
+//     console.log(`${narx*kg} sum : ${kg}kg`);
+// }
+
+
+// 5-masala  ========================================
+
+// bit kg konfetning narxi 3 sum 0dan 10kg gachakondetni narxini chiqarish
+
+// let narx = 3;
+// let kg = 1;
+// for (--kg; kg <= 10; kg++){
+//     console.log(`${narx*kg} sum : ${kg}kg`);
+// }
+
+// 6 - masala ======================================
+
+// console.log(`\n 1 karaliklar \n `);
+
+// let a = 1;
+// for (let kara = 1; a <= 10; a++) {
+//     console.log(`${kara} * ${a} = ${a * kara} `);
+// }
+// console.log(`\n 2 karaliklar \n`);
+
+// let b = 1;
+// for (let kara = 2; b <= 10; b++) {
+//     console.log(`${kara} * ${b} = ${b * kara} `);
+// }
+// console.log(`\n 3 karaliklar \n `);
+
+// let c = 1;
+// for (let kara = 3; c <= 10; c++) {
+//     console.log(`${kara} * ${c} = ${c * kara} `);
+// }
+// console.log(`\n 4 karaliklar \n`);
+
+// let q = 1;
+// for (let kara = 4; q <= 10; q++) {
+//     console.log(`${kara} * ${q} = ${q * kara} `);
+// }
+// console.log(`\n 5 karaliklar \n`);
+
+// let w = 1;
+// for (let kara = 5; w <= 10; w++) {
+//     console.log(`${kara} * ${w} = ${w * kara} `);
+// }
+// console.log(`\n 6 karaliklar \n`);
+
+// let e = 1;
+// for (let kara = 6; e <= 10; e++) {
+//     console.log(`${kara} * ${e} = ${e * kara} `);
+// }
+// console.log(`\n 7 karaliklar \n`);
+
+// let r = 1;
+// for (let kara = 7; r <= 10; r++) {
+//     console.log(`${kara} * ${r} = ${r * kara} `);
+// }
+// console.log(`\n 8 karaliklar \n`);
+
+// let t = 1;
+// for (let kara = 8; t <= 10; t++) {
+//     console.log(`${kara} * ${t} = ${t * kara} `);
+// }
+// console.log(`\n 9 karaliklar \n`);
+
+// let y = 1;
+// for (let kara = 9; y <= 10; y++) {
+//     console.log(`${kara} * ${y} = ${y * kara} `);
+// }
+// console.log(`\n 10 karaliklar \n`);
+
+// let i = 1;
+// for (let kara = 10; i <= 10; i++) {
+//     console.log(`${kara} * ${i} = ${i * kara} `);
+// }
