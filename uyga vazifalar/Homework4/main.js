@@ -95,10 +95,10 @@
 //     console.log(a+10);
 // }
 
-let a = 2;
-let b = -1;
-let c = 3;
+// let a = 2;
+// let b = -1;
+// let c = 3;
 
-if ((a, b, c) >= 0) {
-    console.log();
-}
+// if ((a, b, c) >= 0) {
+//     console.log();
+// }
