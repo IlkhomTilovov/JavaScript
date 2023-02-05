@@ -44,9 +44,36 @@
 // console.log(getName("Toshmatov"));
 
 
-function get(grade, total) {
-    let res = (grade * 100) / 208;
-    return res;
-}
+// function get(grade, total) {
+//     let res = (grade * 100) / 208;
+//     return res;
+// }
 
-console.log(get(200) > 50 ? "passed" : "faild");
+// console.log(get(200) > 50 ? "passed" : "faild");
+
+// function yoshlar(age) {
+//     if (age > 18) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(yoshlar(18));
+
+// function reck(a, b) {
+//     if (a < b) {
+//         return a;
+//     }
+//     return b;
+// }
+// console.log(reck(6, 2));
+
+
+// function reck(a, b) {
+//     let = 1;
+//     for (let i = 0; i < b; i++) {
+//         num = b * a
+//     }
+//     console.log(num);
+// }
+// reck(2, 5);
