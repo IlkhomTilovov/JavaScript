@@ -98,8 +98,66 @@
 //     console.log(name);
 // }
 // test()
-var dd=()=>{
+// var dd=()=>{
 
+// }
+// let dd = "nk"
+// console.log(dd);
+
+// console.log(a);
+// var a = 10;
+// var a=4;
+// var a=3;
+// console.log(a);
+// add()
+
+// function add(){
+//     console.log(123);
+// }
+// add()
+
+// let add=function(){
+//     console.log(12432235323);
+// }
+
+
+// For loop=======================================================
+
+
+// for (let a = 1; a < 11; a += 2) {
+//     console.log(a);
+// }
+
+
+// function ffulname(surname = "tilovov", name = "ilxomjon") {
+//     name = name.toLocaleLowerCase()
+//     surname = surname.toLocaleLowerCase()
+//     fylname = name + " " + surname
+//     return fylname
+// }
+
+// console.log(ffulname("Dilmurod", "Xabibullaev"))
+
+
+
+// function chackAge(age) {
+//     if (age > 18 || age < 19) {
+//         return console.log(true);
+//     } else {
+
+//         return console.log('Did parents allow you?');
+//     }
+// }
+// chackAge(80)
+
+
+// console.log(a);
+// var a = 2;
+
+
+let a = 1;
+
+function box(a = 2) {
+    return a
 }
-let dd = "nk"
-console.log(dd);
+console.log(box(2))
