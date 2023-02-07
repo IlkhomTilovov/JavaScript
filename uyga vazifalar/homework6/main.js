@@ -77,3 +77,29 @@
 //     console.log(num);
 // }
 // reck(2, 5);
+
+
+// function getAvr(){
+//     console.log("webbrain");
+//     console.log("webbrain");
+//     console.log("webbrain");
+//     console.log("webbrain");
+//     console.log("webbrain");
+//     console.log("webbrain");
+//     console.log("==============");
+// }
+
+// getAvr();
+// getAvr();
+// console.log("function dan oldin");
+
+
+// function test(name ="Sardor"){
+//     console.log(name);
+// }
+// test()
+var dd=()=>{
+
+}
+let dd = "nk"
+console.log(dd);
