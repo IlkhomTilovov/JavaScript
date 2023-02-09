@@ -220,3 +220,53 @@
 //         console.log(metr = m / sm);
 //         break;
 // }
+
+
+
+// let menu = {
+//     width: 200,
+//     height: 300,
+//     title: "My menu"
+// };
+// let valeus = Object.values(menu);
+// if (valeus[0] * 2 !== menu.title) {
+//     valeus[0] = valeus[0] * 2;
+// }
+// if (valeus[1] * 2 !== menu.title) {
+//     valeus[1] = valeus[1] * 2;
+// }
+// if (valeus[2] * 2 !== menu.title) {
+//     valeus[2] = valeus[2] * 2;
+// }
+// menu.width = valeus[0];
+// menu.height = valeus[1];
+// menu.title = valeus[2];
+// console.log(valeus);
+
+// console.log(menu);
+
+
+
+
+// let car = {
+//     eshiklar: "oldi eshiklar",
+//     balonlar: "orqa balon",
+//     rang: "Qizil",
+//     yil: 2023,
+//     pozitsiya: 4
+
+// }
+
+// console.log(car);
+
+
+let user = {
+    name: "Davron",
+    email: "davron@gamil.com",
+    yil: "1996.03.01",
+    yashash: "Tashkent shaxri",
+    age: 27
+}
+
+delete user.yil
+console.log(user);
