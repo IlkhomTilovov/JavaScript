@@ -173,5 +173,50 @@
 //     case 12:
 //         console.log("31 kundan iborat");
 //         break;
-    
+
+// }
+
+
+// ========================5======================
+
+// let a = 2;
+// let b = 4;
+
+
+// switch (4) {
+//     case 1:
+//         console.log(a + b);
+//         break;
+//     case 2:
+//         console.log(b - a);
+//         break;
+//     case 3:
+//         console.log(b / a);
+//         break;
+//     case 4:
+//         console.log(b * a);
+//         break;
+// }
+// ========================6======================
+
+// let ds = 10;
+// let km = 1000;
+// let m = 100;
+// let mm = 0.1;
+// let sm = 1;
+
+// metr = 0;
+// switch (km) {
+//     case ds:
+//         console.log(metr = m / ds);
+//         break;
+//     case km:
+//         console.log(metr = m / km);
+//         break;
+//     case mm:
+//         console.log(metr = m / mm);
+//         break;
+//     case sm:
+//         console.log(metr = m / sm);
+//         break;
 // }
