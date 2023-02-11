@@ -260,13 +260,26 @@
 // console.log(car);
 
 
-let user = {
-    name: "Davron",
-    email: "davron@gamil.com",
-    yil: "1996.03.01",
-    yashash: "Tashkent shaxri",
-    age: 27
-}
+// let user = {
+//     name: "Davron",
+//     email: "davron@gamil.com",
+//     yil: "1996.03.01",
+//     yashash: "Tashkent shaxri",
+//     age: 27
+// }
 
-delete user.yil
-console.log(user);
+// delete user.yil
+// console.log(user);
+// let x = 5;
+// let y = 4;
+
+// function remainder(x, y) {
+//     if (x < y) {
+//         return x
+//     } else if (x > y) {
+//         return x
+//     } else {
+//         return 0
+//     }
+// }
+// console.log(remainder(x, y));
