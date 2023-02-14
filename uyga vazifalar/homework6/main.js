@@ -155,9 +155,14 @@
 // var a = 2;
 
 
-let a = 1;
+// let a = 1;
 
-function box(a = 2) {
-    return a
+// function box(a = 2) {
+//     return a
+// }
+// console.log(box(2))
+
+let a = 1;
+for (a; a <= 10; a ** 2 ) {
+    console.log(a);
 }
-console.log(box(2))

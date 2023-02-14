@@ -283,3 +283,24 @@
 //     }
 // }
 // console.log(remainder(x, y));
+// let a = 1;
+// for (a; a <= 10; a++) {
+//     console.log(a ** 3);
+// }
+// let a = 1;
+// for (a; a <= 10; a++) {
+//     console.log(`${a} * ${a} * ${a} = ${a ** 3}`);
+// }
+let a = 1
+let b = 251
+let c = 158
+let d = 86
+
+for (b; a < a; (a - b)) {
+    for (c; c < a; (a - c)) {
+    }
+    for (d; d < a; (a - d)) {
+    }
+    console.log(a);
+
+}
