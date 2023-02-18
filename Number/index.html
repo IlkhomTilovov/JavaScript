@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        table {
+            border: 1px solid;
+        }
+
+        .col {
+            padding: 0 0 0 1rem;
+        }
+
+        .col input {
+            display: block;
+        }
+
+        #form {
+            display: none;
+        }
+
+        .btn-plas {
+            margin-top: 1rem;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>first name</td>
+                        <td>last name</td>
+                        <td>gmail</td>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+            <button class="btn-plas" onclick="plus()">plus</button>
+        </div>
+        <div class="col" id="form">
+            <input type="text" placeholder="first name" id="firstName"> <br>
+            <input type="text" placeholder="last name" id="lastName"> <br>
+            <input type="gmail" placeholder="gmail" id="gmail"> <br>
+            <button class="save" onclick="saveform()">save</button>
+            <button class="close" onclick="closeform()">close</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
