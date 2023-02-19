@@ -50,4 +50,4 @@
 // new getName("Eshmat").sayHi()
 // console.log(getName("Eshmat").sayHi());
 
-let func={}
+let func = {}
