@@ -33,27 +33,78 @@
 // // 101  2ta bir 1ta no'l
 
 
-function getBynary(num) {
-    let bynar = num.toString(2);
-    let one = "";
-    let zero = "";
-    for (vl in bynar) {
-        switch(bynar[vl]) {
-            case "1":
-            one += "1";
-            break;
-            case "0":
-            zero += "0";
-        }
+// function getBynary(num) {
+//     let bynar = num.toString(2);
+//     let one = "";
+//     let zero = "";
+//     for (vl in bynar) {
+//         switch(bynar[vl]) {
+//             case "1":
+//             one += "1";
+//             break;
+//             case "0":
+//             zero += "0";
+//         }
+//     }
+//     console.log(bynar);
+//     console.log(`1 dan ${one.length} ta qatnashgan`);
+//     console.log(`0 dan ${zero.length} ta qatnashgan`);
+// }
+// getBynary(5);
+
+
+
+// Min va Max==========================
+
+// function minMax(num1, num2) {
+//     num1 > num2 ? console.log(num1 - num2) : console.log(num2 - num1);
+// }
+// minMax(60, 61, 12, 35, 123,7);
+
+// function minMax(min, max) {
+//     Math.min();
+//     // Math.max(60, 94, 23, 54, 123, 34, 234, 23, 5, 23, 4, 32, 123, 61);
+//     min < max ? console.log(max - min) : console.log(max - min);
+// }
+// minMax(60, 94, 23, 54, 123, 34, 23, 5, 23, 4, 32, 123, 61)
+
+// function maxMin(max, min) {
+//     max: Math.max(60, 94, 23, 54, 123, 34, 234, 23, 5, 23, 4, 32, 123, 61);
+//     min: Math.min(60, 94, 23, 54, 123, 34, 234, 23, 5, 23, 4, 32, 123, 61);
+//     min < max ? console.log(max - min) : console.log(max - min);
+// }
+// maxMin();
+
+
+// function maxMin(max, min) {
+//     min(60, 94, 23, 54, 123, 34, 234, 23, 5, 23, 4, 32, 123, 61)
+//     max(60, 94, 23, 54, 123, 34, 234, 23, 5, 23, 4, 32, 123, 61)
+//     min < max ? console.log(max - min) : console.log(max - min);
+// }
+// maxMin(min.length, max.length)
+
+
+
+// math.round bu xar bir butun soni yaxlitlab beradi va 12.4 bolsa pasga soni yaxlitlab beradi agar 12.5 dan oshiq bolsa 13 qilib beradi
+// math.floor bu ham soni yaxlitlab beradi faqat pasga qarab yaxlitlaydi
+// math.ceil bu esa tepaga qarap yaxlitlab beradi 
+// math.trunc esa kasrli soni olib tashlaydi yani 12.4 bolsa 12 chiqarib beradi shuning uchun 4ni ignor qilib yuboradi
+// parseInt Math.trunc ga o'xshab ishlaydi
+
+
+
+function randomInteger(min, max) {
+    let plus = Math.floor(Math.random() * max);
+    let minus = Math.floor(Math.random() * min);
+    if (plus >= min) {
+        console.log(plus);
+    } else if (minus <= min) {
+        console.log(min + Math.floor(Math.random() * 5));
+    } else {
+        console.log(min);
     }
-    console.log(bynar);
-    console.log(`1 dan ${one.length} ta qatnashgan: ${one}`);
-    console.log(`0 dan ${zero.length} ta qatnashgan: ${zero}`);
 }
-getBynary(60);
-
-
-
+randomInteger(10, 11);
 
 
 
