@@ -88,4 +88,15 @@ let b = 5;
 // let a = 4
 
 
-console.log();
+// console.log(0.4+0.5);
+
+// let num = "0.1 + 0.2"
+// // console.log(Number(num.toFixed(1)));
+// console.log(parseInt(num));
+// console.log(parseFloat(num));
+// console.log(eval(num));
+
+
+let num = 5;
+
+console.log(num.toString(2 ));

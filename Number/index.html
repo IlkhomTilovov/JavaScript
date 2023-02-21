@@ -44,8 +44,8 @@
             // inputni tozalsh uchun ishlatiladi
             document.getElementById("input").value = ""
         }
-        const localGet = () => {//                              malumotlarni olish uchun ishlatiladi
-            let data = localStorage.getItem("data")//           local Storage dagi ma'lumotni olib beradi
+        const localGet = () => {                             // malumotlarni olish uchun ishlatiladi
+            let data = localStorage.getItem("data")          // local Storage dagi ma'lumotni olib beradi
             return data === null ?//                            agar data nullga 
                 [] ://                                          teng bo'lsa bo'sh array qaytaradi
                 JSON.parse(data)//                              teng bo'lmasa array qanday bo'lsa shunaqa qilib qaytarib beradi buni, JSON.parse qilib beradi
