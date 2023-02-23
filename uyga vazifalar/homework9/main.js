@@ -25,8 +25,25 @@
 
 
 
-let truncate = (str = "webbrain", n = 5) => {
-    console.log(str.slice(0, n));
+// let truncate = (str = "webbrain", n = 5) => {
+//     console.log(str.slice(0, n));
+// }
+// truncate($1200)
+let menu = {
+    pul: "",
+    kurs: ""
+};
+
+let getCurrency = () => {
+
+    for (key in menu) {
+        if (isNaN(key) === false) {
+            let pul = pul + key;
+        } else {
+            let kurs = kurs + key;
+        }
+    }
 }
-truncate()
+getCurrency("$1200");
+console.log(`"pul" ${menu.pul.length}`);
 
