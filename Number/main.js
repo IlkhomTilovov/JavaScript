@@ -100,3 +100,5 @@ let b = 5;
 let num = 5;
 
 console.log(num.toString(2 ));
+
+
