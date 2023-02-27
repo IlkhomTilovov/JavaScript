@@ -124,3 +124,25 @@
 // console.log(num.copyWithin(1, 2, 6));
 
 // Reducer ===========================================
+
+// let num = [1, 2, 3, 4, 5];
+
+// let res = num.reduce((sum, current, i) => {
+//     console.log(i, sum, i - sum);
+//     return i - sum;
+// }, 0);
+// console.log(res);
+
+//               Current
+// 0 - 0 = 0     1-0=1     
+// 1 - 0 = 1     2-1=1
+// 2 - 1 = 1     3-2=1
+// 3 - 1 = 2     4-3=1
+// 4 - 2 = 2     5-4=1
+
+
+// flat =============================================
+
+let num = [1, [2, [3, [4]]], 5, 6, 7, 8];
+console.log(num);
+console.log(num.flat(Infinity).reduce((s, c) => s + c, 0));
