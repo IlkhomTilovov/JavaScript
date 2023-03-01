@@ -64,26 +64,26 @@
 // let num = [20, 11, 53, 42, 6, 84, 95, 0, 32, 71]
 // let res = num.find((value) => {
 //     // console.log(value);
-//     return value === 53
+//     return value === 1
 // })
 // console.log(res);
 
 
-// let students = [
-//     { id: 1, year: 2002, name: "Iqboljon Yuldashev" },
-//     { id: 2, year: 2000, name: "Asilbek Tolipov" },
-//     { id: 3, year: 2002, name: "Najmiddin Nazorov" },
-//     { id: 4, year: 2002, name: "Abdullox Mominov" },
-//     { id: 5, year: 1995, name: "Sardor Turboyev" },
-//     { id: 6, year: 2002, name: "Mohichehra Hudoyberdiyeva" },
-//     { id: 7, year: 2007, name: "Muhammad Nurmirzayev" },
-//     { id: 8, year: 2002, name: "Shohruh Shukurov" }
-// ];
-// let res = students.find((value) => {
-//     return value.id === 5
-// }).name
+let students = [
+    { id: 1, year: 2002, name: "Iqboljon Yuldashev" },
+    { id: 2, year: 2000, name: "Asilbek Tolipov" },
+    { id: 3, year: 2002, name: "Najmiddin Nazorov" },
+    { id: 4, year: 2002, name: "Abdullox Mominov" },
+    { id: 5, year: 1995, name: "Sardor Turboyev" },
+    { id: 6, year: 2002, name: "Mohichehra Hudoyberdiyeva" },
+    { id: 7, year: 2007, name: "Muhammad Nurmirzayev" },
+    { id: 8, year: 2002, name: "Shohruh Shukurov" }
+];
+let res = students.find((value) => {
+    return value.id === 5
+}).name
 
-// console.log(res);
+console.log(res);
 
 
 // ForEach va Map ====================================
@@ -143,6 +143,6 @@
 
 // flat =============================================
 
-let num = [1, [2, [3, [4]]], 5, 6, 7, 8];
-console.log(num);
-console.log(num.flat(Infinity).reduce((s, c) => s + c, 0));
+// let num = [1, [2, [3, [4]]], 5, 6, 7, 8];
+// console.log(num);
+// console.log(num.flat(Infinity).reduce((s, c) => s + c, 0));
