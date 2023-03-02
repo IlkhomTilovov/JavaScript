@@ -116,4 +116,4 @@ const updateUser = (data) => {
 }
 updateUser({ id: 2, type: "name", value: "Gulbashaker" })
 updateUser({ id: 2, type: "year", value: 1999 })
-console.log(students);
+// console.log(students);
