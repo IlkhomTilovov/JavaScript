@@ -27,12 +27,16 @@
 //     console.log(i);
 
 // }
-outer: for (i = 10; i >= 1; i -= 1) {
-    inner: for (j = 1; j <= 10; j += 10) {
-        if (i <= 0) break outer
-    }
-    console.log(`${i} + ${j} = ${i + j}`);
-}
+// outer: for (i = 10; i >= 1; i -= 1) {
+//     inner: for (j = 1; j <= 10; j += 10) {
+//         if (i <= 0) break outer
+//         for (a = 1; a <= 10; a++){
+//             if(j<=0)break inner;
+
+//         }
+//     }
+//     console.log(`${i} + ${j} = ${i + j}`);
+// }
 // outer: for (i = 10; i >= 1; i += 10) {
 //     inner: for (j = 1; j <= 10; j += 1) {
 //         if (i === 4) break outer;

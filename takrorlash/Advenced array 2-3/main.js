@@ -146,3 +146,7 @@ console.log(res);
 // let num = [1, [2, [3, [4]]], 5, 6, 7, 8];
 // console.log(num);
 // console.log(num.flat(Infinity).reduce((s, c) => s + c, 0));
+
+
+
+
