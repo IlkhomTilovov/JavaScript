@@ -78,14 +78,18 @@ let students = [
 // Read SORT =================================
 
 // const sortByYear = () => {
-//     let res = students.sort((a, b) => b.year - a.year)
-//     students = res
+//     let res = students.sort((a, b) => {
+//         return a.year - b.year
+//     })
+//     // students = res
+//     return res
 // }
+// console.log(sortByYear())
 // const sortByAlphabet = () => {
 //     let res = students.sort((a, b) => a.name.localeCompare(b.name))
 //     students = res
 // }
-// sortByAlphabet()
+// // sortByAlphabet()
 // console.log(students);
 
 
@@ -109,11 +113,27 @@ let students = [
 
 // Update Map ============================================
 
-const updateUser = (data) => {
-    let res = students.map((students) =>
-        students.id === data.id ? { ...students, [data.type]: data.value } : students)
-    students = res
-}
-updateUser({ id: 2, type: "name", value: "Gulbashaker" })
-updateUser({ id: 2, type: "year", value: 1999 })
-console.log(students);
+// const updateUser = (data) => {
+//     let res = students.map((students) =>
+//         students.id === data.id ? { ...students, [data.type]: data.value } : students)
+//     students = res
+// }
+// updateUser({ id: 2, type: "name", value: "Gulbashaker" })
+// updateUser({ id: 2, type: "year", value: 1999 })
+// console.log(students);
+
+
+
+// function abPlus(a, b) {
+//     return a + b
+// }
+// console.log(abPlus(abPlus(10, 20), abPlus(30, 40)))
+
+// Read ========================================
+
+// const getFilter = (key) => {
+//     let res = students.filter(value => value.name.toLowerCase().includes(key.toLowerCase()));
+//     students = res
+// }
+// getFilter("sardor")
+// console.log(students);
