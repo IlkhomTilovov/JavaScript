@@ -17,15 +17,43 @@
 // })
 // upkey(" webbrain academy")
 
+// const getCount = (str) => {
+//     let res = {}
+//     for (l of str) {
+//         if (l in res) {
+//             res[l] = res[l] + 1
+//         } else {
+//             l !== " " && (res[l] = 1)
+//         }
+//         console.log(res);
+//     }
+// }
+// getCount("Webbrain Academy")
+
+// const getCount = (str) => {
+//     let res = {}
+//     for (l of str) {
+//         if (l in res) {
+//             res[l] = res[l] + 1;
+//         } else {
+//             l !== " " && (res[l] = 1)
+//         }
+//     }
+//     console.log(res);
+// }
+// getCount("webbrain academy")
+
+
+
 const getCount = (str) => {
     let res = {}
     for (l of str) {
         if (l in res) {
-            res[l] = res[l] + 1
+            res[l] = res[l] + 1;
         } else {
             l !== " " && (res[l] = 1)
         }
-        console.log(res);
     }
+    console.log(res);
 }
-getCount("Webbrain Academy")
+getCount("webbrain academy")
