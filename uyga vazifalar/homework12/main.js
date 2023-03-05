@@ -153,7 +153,130 @@
 
 // 6=========================================
 
-const textGet = (str) => {
-    
+// const textGet = (str) => {
+//     let res = str.split("")
+//     let strRev = res.reverse().join("")
+//     for (i of str) {
+//         console.log(str);
+//         if (strRev === str) {
+//             console.log(`${str} bu palindrom xisoblanadi`);
+//         } else {
+//             console.log(`${str} Bu palindrom emas`);
+//         }
+//     }
+// }
+// textGet("ucu")
+
+
+// 7==============================================
+
+// const teng = (str) => {
+//     let str1 = "web"
+//     let str2 = "ewb"
+//     let res1 = str1.split("")
+//     let res2 = str2.split("")
+//     let res = res1 === res2
+
+//     for (i of res1)
+//         if (res1 === res2) {
+
+//         }
+//     console.log(res);
+// }
+// teng()
+
+// let str1 = "web"
+// let str2 = "ewb"
+// str1 = str1.toLowerCase().split("").sort().join()
+// str2 = str2.toLowerCase().split("").sort().join()
+
+// console.log(str1 === str2);
+
+
+// 8==================================================
+
+// const text = (str) => {
+//     let res = {}
+//     for (i of str) {
+//         if (i in res) {
+//             res[i] = res[i] + 1;
+//         } else {
+//             i !== " " && (res[i] = 1);
+//         }
+//     }
+//     console.log(res);
+// }
+
+// text("webbrain academy")
+
+// 9===================================================
+
+// const text = (str) => {
+//     let res = ""
+//     let count = 1
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === str[i + 1]) {
+//             count++
+//         } else {
+//             res += str[i]
+//             if (count > 1) {
+//                 res += count
+//                 count = 1
+//             }
+//         }
+//     }
+//     console.log(res)
+// }
+// text("webbraaiiin")
+
+// 10=======================================
+
+
+// let obj = { title: "webbrain", age: 2 }
+// console.log(Object.keys(obj));
+
+
+// 11=========================================
+
+// let obj = {
+//     title: "Webbrain",
+//     age: 2,
+//     child: {
+//         age: 4,
+//         name: "Webbrain",
+//         child: {
+//             age: 3,
+//         },
+//     },
+// }
+// console.log(obj.age + obj.child.age + obj.child.child.age);
+
+let object = {
+    title: "webbrain",
+    age: 2,
+    child: {
+        age: 4,
+        name: "webbrain",
+        child: {
+            age: 3
+        }
+    }
 }
-textGet("non")
+let sum = 0;
+let getChild = (obj) => {
+    sum += obj["age"];
+    for (i in obj) {
+        if (typeof obj[i] === "object") {
+            getChild(obj[i]);
+        }
+    }
+}
+getChild(object);
+console.log(sum);
+
+
+
+
+
+
+
