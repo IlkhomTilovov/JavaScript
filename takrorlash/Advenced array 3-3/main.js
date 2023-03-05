@@ -44,12 +44,12 @@ let students = [
 
 // Read filter ====================================
 
-// const deleteUser = (id) => {
-//     let res = students.filter((value) => value.id !== id)
-//     students = res
-// }
-// deleteUser(4);
-// console.log(students);
+const deleteUser = (id) => {
+    let res = students.filter((value) => value.id !== id)
+    students = res
+}
+deleteUser(4);
+console.log(students);
 
 
 // Update ========================================= 
