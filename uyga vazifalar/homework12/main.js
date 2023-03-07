@@ -288,16 +288,63 @@
 // }
 // console.log(sum);
 
-let obj = {
-    id: 1,
-    name: "Webbrain",
-    offline: true,
-    online: true,
-    indicidual: false
-};
-for (i in obj) {
+// let obj = {
+//     id: 1,
+//     name: "Webbrain",
+//     offline: true,
+//     online: true,
+//     indicidual: false
+// };
 
-    if (obj[i] === Boolean) {
-        console.log(obj[i]);
-    }
-}
+
+
+// for (i in obj) {
+//     if (typeof obj[i] === "boolean") {
+//         console.log(`${i} | ${obj[i]}`);
+//     }
+// }
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [1, 2, 3];
+
+// let str1 = arr1.toString();
+// let str2 = arr1.toString();
+
+// function num(str1, str2) {
+//     if (str1.localeCompare() === str2.localeCompare()) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(num(str1, str2));
+
+
+
+
+
+
+
+
+
+// let arr = [1, 64, 8, 27, 64, 125];
+
+// for (let i = 0; i < arr.length; i++) {
+//   let str = arr[i].toString();
+//   if (str.length === 2) {
+//     console.log(str);
+//   }
+// }
+
+
+
+// let a = [7, 2, 8, 2, 43, 9, 20, 5, 2, 3, 4]
+// while (a.length > 1) {
+//     a = a.sort((a, b) => b - a);
+//     console.log(a);
+//     if ((a[0] - a[1]) !== 0) {
+//         a.push(a[0] - a[1])
+//     }
+//     a.splice(0, 2);
+// }
+// console.log(a);
