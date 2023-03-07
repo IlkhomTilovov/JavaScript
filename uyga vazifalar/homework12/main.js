@@ -75,7 +75,6 @@
 //     let kichik = ""
 //     for (i of str) {
 //         (i === i.toUpperCase()) ? i === " " ? '' : kotta += 1 : kichik += i;
-
 //     }
 //     console.log(`${kotta.length}ta kota, ${kichik.length}ta kichik`);
 
@@ -101,7 +100,7 @@
 //     let i = 0
 //     for (let i = 0; i < str.length; i++) {
 
-//         if (str[i] === str[i + 1]) {
+//         if (str[i] !== str[i + 1]) {
 
 //             result += str[i]
 //         }
@@ -212,6 +211,23 @@
 // 9===================================================
 
 // const text = (str) => {
+//     let res = {}
+//     for (i of str) {
+//         if (i in res) {
+//             res[i] = res[i] + 1;
+//         } else {
+//             i !== " " && (res[i] = 1);
+//         }
+//     }
+//     console.log(res);
+// }
+
+// text("webbraiiin")
+
+
+
+
+// const text = (str) => {
 //     let res = ""
 //     let count = 1
 //     for (let i = 0; i < str.length; i++) {
@@ -251,32 +267,37 @@
 // }
 // console.log(obj.age + obj.child.age + obj.child.child.age);
 
-let object = {
-    title: "webbrain",
-    age: 2,
-    child: {
-        age: 4,
-        name: "webbrain",
-        child: {
-            age: 3
-        }
+// 
+
+// let obj = {
+//     title: "Webbbrain",
+//     age: 2,
+//     child: {
+//         title: "Webbrain",
+//         age: 4,
+//         child: {
+//             title: "Webbrain",
+//             age: 3
+//         }
+//     }
+// }
+// let sum = 0;
+// while (obj) {
+//     sum += obj.age
+//     obj = obj.child
+// }
+// console.log(sum);
+
+let obj = {
+    id: 1,
+    name: "Webbrain",
+    offline: true,
+    online: true,
+    indicidual: false
+};
+for (i in obj) {
+
+    if (obj[i] === Boolean) {
+        console.log(obj[i]);
     }
 }
-let sum = 0;
-let getChild = (obj) => {
-    sum += obj["age"];
-    for (i in obj) {
-        if (typeof obj[i] === "object") {
-            getChild(obj[i]);
-        }
-    }
-}
-getChild(object);
-console.log(sum);
-
-
-
-
-
-
-
