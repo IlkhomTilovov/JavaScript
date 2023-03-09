@@ -288,21 +288,21 @@
 // }
 // console.log(sum);
 
-// let obj = {
-//     id: 1,
-//     name: "Webbrain",
-//     offline: true,
-//     online: true,
-//     indicidual: false
-// };
+let obj = {
+    id: 1,
+    name: "Webbrain",
+    offline: true,
+    online: true,
+    indicidual: false
+};
 
 
 
-// for (i in obj) {
-//     if (typeof obj[i] === "boolean") {
-//         console.log(`${i} | ${obj[i]}`);
-//     }
-// }
+for (i in obj) {
+    if (typeof obj[i] === "boolean") {
+        console.log(`${i} | ${obj[i]}`);
+    }
+}
 
 // let arr1 = [1, 2, 3];
 // let arr2 = [1, 2, 3];
@@ -310,14 +310,14 @@
 // let str1 = arr1.toString();
 // let str2 = arr1.toString();
 
-// function num(str1, str2) {
-//     if (str1.localeCompare() === str2.localeCompare()) {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
-// console.log(num(str1, str2));
+function num(str1, str2) {
+    if (str1.localeCompare() === str2.localeCompare()) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(num(str1, str2));
 
 
 

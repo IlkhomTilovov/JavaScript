@@ -1,0 +1,14 @@
+.container {
+    margin: 100px auto;
+    width: 800px;
+    height: 480px;
+    box-shadow: 0 10px 25px rgba(80, 80, 80, 10);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 5px 30px;
+}
+
