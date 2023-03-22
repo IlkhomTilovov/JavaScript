@@ -24,8 +24,15 @@
 //     console.log(vl);
 // }
 
-let map = new Map([["name", "webbrain"], ["title", "IT Center"]])
+// let map = new Map([["name", "webbrain"], ["title", "IT Center"]])
 
 
-console.log(Object.fromEntries(map).title);
+// console.log(Object.fromEntries(map).title);
 
+
+let title = "webbrain"
+{
+    let title = "web"
+    console.log(title);
+}
+console.log(title);

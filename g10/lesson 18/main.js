@@ -17,7 +17,17 @@
 
 
 
-let ar = [12, 3, 322, 4, 5, 3];
-ar.sort((a, b) => b - a);
-ar.splice(0, 1);
-console.log(ar);
+// let ar = [12, 3, 322, 4, 5, 3];
+// ar.sort((a, b) => b - a);
+// ar.splice(0, 1);
+// console.l2og(ar);
+let a = 2;
+let b = 5;
+
+// console.log(b,a);
+if ((a = (b / b) * b) && (b = (a / a) * a)) {
+    console.log(`${a} a - ${b} b`);
+}
+
+
+
