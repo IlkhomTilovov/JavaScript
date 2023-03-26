@@ -39,7 +39,8 @@
         </div>
     </div>
     <script>
-
+        let saveBoolean = false
+        let editObj
         const clearInput = () => {
             // inputni tozalsh uchun ishlatiladi
             document.getElementById("input").value = ""
@@ -75,12 +76,37 @@
         }
         const localSave = () => {//                             save button function
             let data = localGet()//                             data qaytarib beradi
-            data.push(inputGet())//                             qaytgan datani ichiga yanigi object solib beradi
-            localStorage.setItem("data", JSON.stringify(data))//local Storagega saqlab beradi
-            clearInput()//                                      bu inputni tozlash uchun ishlatiladi
-            chizish()
+            if (saveBoolean) {
+                localStorage.setItem('data', JSON.stringify(data.map(i => i.id === editObj.id ? { ...editObj, text: document.getElementById("input").value } : { ...i })))
+                saveBoolean = false
+                editObj = {}
+                chizish()
+            } else {
+                data.push(inputGet())//                             qaytgan datani ichiga yanigi object solib beradi
+                localStorage.setItem("data", JSON.stringify(data))//local Storagega saqlab beradi
+                clearInput()//                                      bu inputni tozlash uchun ishlatiladi
+                chizish()
+            }
         }
         chizish()
+
+        let container = document.getElementById("container")
+        container.addEventListener('mouseenter', function () {
+            for (let i of container.children) {
+                i.addEventListener("click", ({ target: { innerText } }) => {
+                    let id = parseInt(i.getAttribute('name'));
+                    if (innerText === "delete") {
+                        localStorage.setItem("data", JSON.stringify(localGet().filter(i => i.id !== id)))
+                        chizish()
+                    } else if (innerText === "edit") {
+                        let result = localGet().filter(i => i?.id === id)[0]
+                        document.getElementById("input").value = result.text
+                        editObj = result
+                        saveBoolean = true
+                    }
+                })
+            }
+        })
     </script>
 </body>
 

@@ -1,0 +1,12 @@
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+}
+.tablitsa{
+    display: flex;
+    justify-content: center;
+}
+.tablitsa p{
+    width: 20%;
+}
