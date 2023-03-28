@@ -1,0 +1,9 @@
+.parent {
+    padding: 20px;
+    border: 1px solid;
+    width: 150px;
+}
+
+ul>li {
+    padding: 5px;
+}
