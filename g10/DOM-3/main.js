@@ -15,5 +15,11 @@
 // const heading = document.querySelector("#headings")
 // heading.remove()
 
-const headings = document.querySelectorAll("h1")
-console.log(headings);
+// const headings = document.querySelectorAll("h1")
+// console.log(headings);
+
+// const heading = document.getElementById('headings');
+// heading.textContent = "Zeeyod"
+
+const inputEl = document.getElementById("userName")
+inputEl.value = 25
