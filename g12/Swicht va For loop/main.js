@@ -55,3 +55,4 @@
 //   console.log(`${k / 10} - kg  *  ${s} - narx = ${Math.ceil((k / 10) * s)}sum`);
 // }
 
+console.log();

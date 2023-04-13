@@ -29,11 +29,17 @@
 // Array [ ]
 // function get() {}
 
-let n1 = null;
-let n2 = null;
-console.log(n1 === n2);
-console.log("=======");
-let a = 2;
-let obj1 = { a };
-let obj2 = { a };
-console.log(obj1 === obj2);
+// let n1 = null;
+// let n2 = null;
+// console.log(n1 === n2);
+// console.log("=======");
+// let a = 2;
+// let obj1 = { a };
+// let obj2 = { a };
+// console.log(obj1 === obj2);
+
+// var a = 12;
+// var a = 31;
+
+console.log(title);
+// let title = "WBA"
