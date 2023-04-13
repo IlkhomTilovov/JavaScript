@@ -1,5 +1,5 @@
-let parent = document.querySelector(".parent")
-let btn = document.querySelector("button")
+// let parent = document.querySelector(".parent")
+// let btn = document.querySelector("button")
 
 // console.log(parent.getAttribute('class'));
 // parent.setAttribute('id', 'border');
@@ -37,23 +37,23 @@ let btn = document.querySelector("button")
 // console.log(parent.offsetWidth);
 // console.log(parent.clientWidth);
 // console.log(parent.scrollWidth);
-console.log(parent.scrollHeight);
+// console.log(parent.scrollHeight);
 
-function expand() {
-    if (parent.clientHeight === parent.scrollHeight) {
-        parent.style.height = "150px"
-        btn.innerHTML = "Show more"
+// function expand() {
+//     if (parent.clientHeight === parent.scrollHeight) {
+//         parent.style.height = "150px"
+//         btn.innerHTML = "Show more"
 
-    } else {
+//     } else {
 
-        parent.style.height = `${parent.scrollHeight}px`
-        btn.innerHTML = "Show less"
-    }
-}
-function sr() {
-    if (parent.scroll(0, parent.scrollHeight)) {
-        parent.scroll(0, parent.scrollTop)
-    } else {
-        parent.scroll(0, parent.scrollHeight)
-    }
-}
+//         parent.style.height = `${parent.scrollHeight}px`
+//         btn.innerHTML = "Show less"
+//     }
+// }
+// function sr() {
+//     if (parent.scroll(0, parent.scrollHeight)) {
+//         parent.scroll(0, parent.scrollTop)
+//     } else {
+//         parent.scroll(0, parent.scrollHeight)
+//     }
+// }
