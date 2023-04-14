@@ -55,4 +55,18 @@
 //   console.log(`${k / 10} - kg  *  ${s} - narx = ${Math.ceil((k / 10) * s)}sum`);
 // }
 
-console.log();
+let n = 1111111111117;
+let num = 0;
+let juft = 0;
+let toq = 0;
+for (let i = 0; i < 10; i++) {
+  num = n % 10;
+  n = parseInt(n / 10);
+  if (num % 2 === 0) {
+    juft += num;
+  } else if (num % 2 === 1) {
+    toq += num;
+  }
+}
+console.log(`${juft} - Juft sonlar | ${toq} - Toq sonlar`);
+
