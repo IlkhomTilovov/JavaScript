@@ -55,18 +55,103 @@
 //   console.log(`${k / 10} - kg  *  ${s} - narx = ${Math.ceil((k / 10) * s)}sum`);
 // }
 
-let n = 1111111111117;
-let num = 0;
-let juft = 0;
-let toq = 0;
+// let n = 1111111111117;
+// let num = 0;
+// let juft = 0;
+// let toq = 0;
+// for (let i = 0; i < 10; i++) {
+//   num = n % 10;
+//   n = parseInt(n / 10);
+//   if (num % 2 === 0) {
+//     juft += num;
+//   } else if (num % 2 === 1) {
+//     toq += num;
+//   }
+// }
+// console.log(`${juft} - Juft sonlar | ${toq} - Toq sonlar`);
+
+// let n = 100;
+// let c = 0;
+
+// for (let i = 2; i <= n; i++) {
+//   for (let j = 1; j <= i; j++) {
+//     if (i % j === 0) {
+//       c++;
+//     }
+//   }
+//   if (c == 2) {
+//     console.log(`tub son ${i}`);
+//   }
+//   c = 0;
+// }
+
+// if(c==2){
+//     console.log(c);
+// }
+
+// let n = 123;
+// for (let i = 0; i < n; i++) {
+//   tub = n % 10;
+//   n = parseInt(n / 10);
+//   console.log(tub);
+// }
+// let n = 123;
+// for (let i = 0; i < n; i++) {
+//   num = n % 10;
+//   console.log(num);
+//   n = parseInt(n / 10);
+// }
+
+// const num = () => {
+//   for (let i = 0; i < n; i++) {
+//     let tub = 0;
+//     tub = n % 10;
+//     n = parseInt(n / 10);
+//     console.log(tub);
+//   }
+// };
+// num();
+
+// for (let i = 1; i < n; i++) {
+//   let tub = true;
+//   for (let j = 2; j < i; j++) {
+//     if (i % j === 0) {
+//       tub = false;
+//       break;
+//     }
+//   }
+//   if (tub) {
+//     console.log(i);
+//   }
+// }
+
+// let i = 1;
+// for (i; i <= 00; i++) {
+//   tub = true;
+//   for (let b = 2; b < i; b++) {
+//     if (i % b === 0) {
+//       tub = false;
+//       break;
+//     }
+//   }
+//   if (tub == true) {
+//     console.log(i);
+//   }
+// }
+
+let n = 123456;
+
 for (let i = 0; i < 10; i++) {
   num = n % 10;
   n = parseInt(n / 10);
-  if (num % 2 === 0) {
-    juft += num;
-  } else if (num % 2 === 1) {
-    toq += num;
+  let tub = true;
+  for (let b = 2; b < num; b++) {
+    if (num % b === 0) {
+      tub = false;
+      break;
+    }
   }
+    if (tub == true) {
+      console.log(num);
+    }
 }
-console.log(`${juft} - Juft sonlar | ${toq} - Toq sonlar`);
-
