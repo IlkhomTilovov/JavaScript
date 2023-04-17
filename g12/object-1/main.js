@@ -100,33 +100,64 @@
 
 // object va string berilgan .agar object keylari ichida
 // stringga teng bolgan key bolsa shu key va valueni chiqazing
-let obj = {
-  id: 1,
-  name: "WebBrain",
-  offline: true,
-  online: true,
-  individual: false,
-};
-let res = "";
-// function Search(obj, str) {
-//   for (i in obj) {
-//     `${(str = obj[i])}`;
-//     if (str == obj[i]) {
-//       console.log(str);
-//     } else {
-//       console.log("error");
+// let obj = {
+//   id: 1,
+//   name: "WebBrain",
+//   offline: true,
+//   online: true,
+//   individual: false,
+// };
+
+// function Search(obj, val) {
+//   let res = {};
+//   for (key in obj) {
+//     if (obj[key] === val) {
+//       res[key] = val;
 //     }
 //   }
+//   console.log(res);
 // }
-// Search(obj, "1");
+// Search(obj, "s");
 
-function Search(obj, val) {
-  let res = {};
-  for (key in obj) {
-    if (obj[key] === val) {
-      res[key] = val;
-    }
-  }
-  console.log(res);
-}
-Search(obj, 1);
+// 9-msiol ===============================================
+
+// object va string berilgan.  string bor bolgan object valuelarining chiqaring
+// let obj = {
+//   id: 1,
+//   name: "atirgul",
+//   color: "qizil",
+//   count: 10,
+//   price: "10$",
+// };
+// const searchValue = (obj, str) => {
+//   for (i in obj) {
+//     if (typeof obj[i] === "string") {
+//       console.log(obj[i]);
+//     }
+//   }
+// };
+// searchValue(obj, "qizil");
+
+// 10-msiol ===============================================
+
+// let obj = {
+//   id: 1,
+//   name: "Odil",
+//   age: 78,
+//   child: {
+//     id: 1,
+//     name: "Ali",
+//     age: 48,
+//     child: {
+//       id: 1,
+//       name: "Umar",
+//       age: 20,
+//     },
+//   },
+// };
+// let sum = 0;
+// while (obj) {
+//   sum += obj.age;
+//   obj = obj.child;
+// }
+// console.log(sum);
