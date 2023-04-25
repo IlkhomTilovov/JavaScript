@@ -161,3 +161,45 @@
 //   obj = obj.child;
 // }
 // console.log(sum);
+
+// const seconds = (s) => {
+//   if ((s = 3600)) {
+//     console.log(s * 2);
+//   }
+// };
+// seconds();
+
+// function cubes(a, b) {
+//   return a ** b;
+// }
+// function log(res) {
+//   console.log(res);
+// }
+// log(cubes(3, 2));
+// log(cubes(5, 3));
+// log(cubes(6, 4));
+
+let obj = {
+  name: "Ziyod",
+  Surname: "Tilovov",
+  age: 26,
+};
+const funCount = (str) => {
+  let unli = ["a", "i", "u", "o", "e"];
+  let count = 0;
+  for (let i of str.toString().toLowerCase()) {
+    if (unli.indexOf(i) !== -1) {
+      count++;
+    }
+  }
+  return count;
+};
+const funResalt = () => {
+  let count = 0;
+  Object?.keys(obj)?.map((i) => {
+    count += funCount(i);
+    count += funCount(obj[i]);
+  });
+  return count;
+};
+console.log(`${funResalt()}ta unli harf bor`);
