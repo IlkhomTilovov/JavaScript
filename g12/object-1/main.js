@@ -179,27 +179,51 @@
 // log(cubes(5, 3));
 // log(cubes(6, 4));
 
-let obj = {
-  name: "Ziyod",
-  Surname: "Tilovov",
-  age: 26,
-};
-const funCount = (str) => {
-  let unli = ["a", "i", "u", "o", "e"];
-  let count = 0;
-  for (let i of str.toString().toLowerCase()) {
-    if (unli.indexOf(i) !== -1) {
-      count++;
+// let obj = {
+//   name: "Ziyod",
+//   Surname: "Tilovov",
+//   age: 26,
+//   foundend: 2022,
+// };
+// const funCount = (str) => {
+//   let unli = ["a", "i", "u", "o", "e"];
+//   let count = 0;
+//   for (let i of str.toString().toLowerCase()) {
+//     if (unli.indexOf(i) !== -1) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+// const funResalt = () => {
+//   let count = 0;
+//   Object?.keys(obj)?.map((i) => {
+//     count += funCount(i);
+//     count += funCount(obj[i]);
+//   });
+//   return count;
+// };
+// console.log(`${funResalt()}ta unli harf bor`);
+const funResultObj = (obj, num) => {
+  for (let i in obj) {
+    if (obj[i] > num) {
+      obj[i] = obj[i] - num;
+    } else {
+      obj[i] = num - obj[i];
     }
   }
-  return count;
+  return obj;
 };
-const funResalt = () => {
-  let count = 0;
-  Object?.keys(obj)?.map((i) => {
-    count += funCount(i);
-    count += funCount(obj[i]);
-  });
-  return count;
+const funMinSumma = (obj) => {
+  let num = obj[Object?.keys(obj)[0]];
+  for (let i in obj) {
+    if (num > obj[i]) {
+      num = obj[i];
+    }
+  }
+  return num;
 };
-console.log(`${funResalt()}ta unli harf bor`);
+const funResult = (obj, num) => {
+  return funMinSumma(funResultObj(obj, num));
+};
+console.log(funResult({ x: 23, y: 2, z: 21 }, 12));
