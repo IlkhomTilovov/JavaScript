@@ -51,8 +51,13 @@
 
 const fun = (str) => {
   let res = "";
-  for (let i in str) {
-    return str[i];
+  for (let i = str.length - 1; i >= 0; i--) {
+    res += str[i];
   }
+  console.log(res);
 };
-console.log(fun("Islom"));
+fun("Islmo", 0);
+// let text = "Islom";
+// let res = text.split("");
+// let res2 = res.reverse("");
+// console.log(res);
