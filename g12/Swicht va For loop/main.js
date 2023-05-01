@@ -139,9 +139,9 @@
 //   }
 // }
 
-let n = 123456;
+let n = 123456789;
 
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 9; i++) {
   num = n % 10;
   n = parseInt(n / 10);
   let tub = true;
@@ -155,3 +155,5 @@ for (let i = 0; i < 10; i++) {
       console.log(num);
     }
 }
+
+

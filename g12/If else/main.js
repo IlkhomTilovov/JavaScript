@@ -7,21 +7,21 @@
 //   console.log("b=", b);
 // }
 
-// let n = 100;
+let n = 100;
 
-// c = 0;
+c = 0;
 
-// for (let j = 2; j <= n; j++) {
-//     for (let i = 1; i <= j; i++) {
-//         if (j % i === 0) {
-//             c++;
-//         }
-//     }
-//     if (c == 2) {
-//         console.log(`tub son ${j}`);
-//     }
-//     c = 0;
-// }
+for (let j = 2; j <= n; j++) {
+    for (let i = 1; i <= j; i++) {
+        if (j % i === 0) {
+            c++;
+        }
+    }
+    if (c == 2) {
+        console.log(`tub son ${j}`);
+    }
+    c = 0;
+}
 
 
 

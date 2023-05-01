@@ -179,6 +179,7 @@
 // log(cubes(5, 3));
 // log(cubes(6, 4));
 
+// =====================================================
 // let obj = {
 //   name: "Ziyod",
 //   Surname: "Tilovov",
@@ -204,26 +205,111 @@
 //   return count;
 // };
 // console.log(`${funResalt()}ta unli harf bor`);
-const funResultObj = (obj, num) => {
-  for (let i in obj) {
-    if (obj[i] > num) {
-      obj[i] = obj[i] - num;
-    } else {
-      obj[i] = num - obj[i];
-    }
+// ======================================================
+
+// const funResultObj = (obj, num) => {
+//   for (let i in obj) {
+//     if (obj[i] > num) {
+//       obj[i] = obj[i] - num;
+//     } else {
+//       obj[i] = num - obj[i];
+//     }
+//   }
+//   return obj;
+// };
+// const funMinSumma = (obj) => {
+//   let num = obj[Object?.keys(obj)[0]];
+//   for (let i in obj) {
+//     if (num > obj[i]) {
+//       num = obj[i];
+//     }
+//   }
+//   return num;
+// };
+// const funResult = (obj, num) => {
+//   return funMinSumma(funResultObj(obj, num));
+// };
+// console.log(funResult({ x: 23, y: 2, z: 21 }, 12));
+
+// let text = "LOrem ipsum";
+// let array = [];
+// let count = 0;
+// const funResultText = () => {
+
+// };
+// // funResultText();
+// const funResult = () => {
+//   let arr = [];
+//   let count = 0;
+//   // while (arr.length < 10) {
+//   //   count++;
+//   //   if (arr.indexOf(num) === -1) {
+//   //     arr.push(num);
+//   //   }
+//   // }qq1
+//   for (let i = 0; i < 100; i++) {
+//     let num = Math.trunc(Math.random() * (100 - 1 + 1) + 1);
+//     if (arr.indexOf(num) === -1) {
+//       arr.push(num);
+//     }
+//   }
+//   console.log(arr.length);
+// };
+// funResult();
+// let notKey = ["country", "age"];
+
+// let user = {
+//   islom: "",
+//   age: "",
+//   gmail: "islom@gmail",
+//   country: "",
+// };
+// let error = {};
+// // error["islom"] = "blue";
+// // console.log(error);
+// // const funKeyValue = () => {
+// //   for (let i in user) {
+// //     if (user[i].length > 0) {
+// //       error[i] = "blue";
+// //     } else {
+// //       error[i] = "red";
+// //     }
+// //   }
+// //   console.log(error);
+// // };
+// // funKeyValue();
+
+// const funKeyValue = () => {
+//   for (let i of notKey) {
+//     delete user[i];
+//   }
+
+//   for (let i in user) {
+//     if (user[i].length > 0) {
+//       error[i] = "blue";
+//     } else {
+//       error[i] = "red";
+//     }
+//   }
+//   console.log(error);
+// };
+// funKeyValue();
+// let arr = [2, 5, 5, 5, 2, 5, 5, 6, 5];
+// let arr2 = [];
+// for (let i of arr) {
+//   if (arr2.length === 0) {
+//     arr2.push(i);
+//   }
+//   if (arr2.indexOf(i) === -1) {
+//     arr2.push(i);
+//   }
+// }
+// console.log(arr2);
+
+let arr = [2, 5, 5, 5, 2, 5, 5, 6, 5];
+for (let i of arr) {
+  if (arr.indexOf(i) == 5) {
+    arr.splice(i, 0);
   }
-  return obj;
-};
-const funMinSumma = (obj) => {
-  let num = obj[Object?.keys(obj)[0]];
-  for (let i in obj) {
-    if (num > obj[i]) {
-      num = obj[i];
-    }
-  }
-  return num;
-};
-const funResult = (obj, num) => {
-  return funMinSumma(funResultObj(obj, num));
-};
-console.log(funResult({ x: 23, y: 2, z: 21 }, 12));
+}
+console.log(arr); 
