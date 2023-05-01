@@ -17,4 +17,20 @@
 // };
 // byner(7);
 
-let min= 
+// let min = Math.min(2, 2, 45, 23, 4, 24, 34, 63, 4, 25, 46, 2, 42, 43);
+// let max = Math.max(2, 2, 45, 23, 4, 24, 34, 63, 4, 25, 46, 2, 42, 43);
+// console.log(max - min);
+
+// const getRandom = (min, max) => {
+//   return Math.abs(Math.trunc(Math.random() * max) - (max - min));
+// };
+// console.log(getRandom(1, 50));
+
+// let n = 1234326;
+// let num = n.toString();
+// let res = 0;
+// for (let i of num) {
+//   let r = Number(i);
+//   res += r;
+// }
+// console.log(res);
