@@ -109,3 +109,46 @@
 //     console.log(res);
 //   };
 //   getCount("webbr@<>!n_2022");
+
+// 7 - Misol =============================================
+// const telPhone = (str) => {
+//   let res = "";
+//   for (let i = 1; i < str.length; i++) {
+//     if (str.startsWith("+998") === true) {
+//       return (res += str.substring(4, str.length));
+//     } else {
+//       return (res += str.padStart(str.length + 4, "+998"));
+//     }
+//   }
+// };
+// console.log(telPhone("+99533 576 2020"));
+// let str = "33 576 2020";
+// console.log(str.includes(+9));
+
+// const telPhone = (str) => {
+//   let res = "";
+//   for (let i = 1; i < str.length; i++) {
+//     if (str.startsWith("+998") === true) {
+//       return (res += str.substring(0, str.length));
+//     } else if (str.startsWith("+998")===false) {
+//       return (res += str.substring(4, str.length).padStart(str.length, "+998"));
+//     } else if (str.startsWith("+") === false) {
+//       return (res += str.padStart(str.length + 4, "+998"));
+//     }
+//   }
+// };
+// console.log(telPhone("+99433 576 2020"));
+
+// let str = "+998335762020";
+// console.log(str.substring(4));
+
+const telPhone = (str) => {
+  let res = "";
+  for (let i of str) {
+    if (str.length === 10) {
+      return (res += i.padStart(i.length + 4, "+998"));
+    }
+  }
+    // console.log(res);
+};
+console.log(telPhone("33 576 2020"));
