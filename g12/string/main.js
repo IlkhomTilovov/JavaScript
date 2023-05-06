@@ -13,18 +13,19 @@
 
 //  2 - Misol =============================================
 
-// const getCount = (str) => {
-//   let res = {};
-//   for (let i of str) {
-//     if (i in res) {
-//       res[i] = res[i] + 1;
-//     } else {
-//       i !== " " && (res[i] = 1);
-//     }
-//   }
-//   console.log(res);
-// };
-// getCount("webbrain");
+const getCount = (str) => {
+  let res = {};
+  for (let i of str) {
+    if (i in res) {
+      res[i] = res[i] + 1;
+    } else {
+      i !== " " && (res[i] = 1);
+    }
+  }
+  console.log(str);
+};
+getCount("webbrain");
+getCount("academy");
 
 //  3 - Misol =============================================
 
@@ -52,24 +53,24 @@
 
 //  5 - Misol =============================================
 
-// const capitilize = (str) => {
-//   let res = "";
-//   for (let i = 0; i < str.length; i++) {
-//     if (i === 0) {
-//       res += str[i].toUpperCase();
-//     } else {
-//       if (str[i] === " ") {
-//         res += str[i];
-//         res += str[i + 1].toUpperCase();
-//         i++;
-//       } else {
-//         res += str[i];
-//       }
-//     }
-//   }
-//   console.log(res);
-// };
-// capitilize("webbrain academy it center");
+const capitilize = (str) => {
+  let res = "";
+  for (let i = 0; i < str.length; i++) {
+    if (i === 0) {
+      res += str[i].toUpperCase();
+    } else {
+      if (str[i] === " ") {
+        res += str[i];
+        res += str[i + 1].toUpperCase();
+        i++;
+      } else {
+        res += str[i];
+      }
+    }
+  }
+  console.log(res);
+};
+capitilize("webbrain academy it center");
 
 //   6- Misol =============================================
 
@@ -149,6 +150,6 @@ const telPhone = (str) => {
       return (res += i.padStart(i.length + 4, "+998"));
     }
   }
-    // console.log(res);
+  // console.log(res);
 };
 console.log(telPhone("33 576 2020"));
