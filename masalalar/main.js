@@ -34,6 +34,11 @@
 // };
 // console.log(fun("1234567890"));
 
+
+// let ar ="Azizbek"
+// let res = ar.split("").reverse().join("")
+// console.log(res);
+
 // 4 =======================================
 
 // const fun = (str) => {
@@ -49,14 +54,14 @@
 
 // 5 ====================================
 
-const fun = (str) => {
-  let res = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    res += str[i];
-  }
-  console.log(res);
-};
-fun("Islmo", 0);
+// const fun = (str) => {
+//   let res = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     res += str[i];
+//   }
+//   console.log(res);
+// };
+// fun("Islmo", 0);
 // let text = "Islom";
 // let res = text.split("");
 // let res2 = res.reverse("");
