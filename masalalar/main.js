@@ -232,7 +232,7 @@
 //   let result = s.split(" ");
 //   return result.sort((a, b) => {
 //     return a.length - b.length;
-//   })[0].length;
+//   })[0];
 // }
 // console.log(findShort("Let's travel abroad shall we"));
 
@@ -280,3 +280,16 @@
 // getNum([5, 3, 2, 1, 4]);
 // getNum([2, 2, 1, 2, 1]);
 
+// let a = ["1, 2, 3, 4, 5, 6, 7"];
+// console.log(a.substr(2, 6));
+
+const getNum = (a, b) => {
+  let res = [];
+  for (let i of a) {
+    if (i !== b) {
+      res.push(i);
+    }
+  }
+  console.log(res);
+};
+getNum([1, 2, 3], 2);
