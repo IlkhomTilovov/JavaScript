@@ -43,20 +43,17 @@
 
 // console.log(child.parent());
 
+// ============================================================================
+// ============================================================================
+// ============================================================================
+// ============================================================================
+// ============================================================================
+// ============================================================================
+// ============================================================================
+// ============================================================================
+// ============================================================================
+
 // 27.05.2023   4/5
-
-// 1. returnga unique value qaytsin.
-
-// findUniq([1, 1, 1, 2, 1, 1]) === 2
-// findUniq([0, 0, 0.55, 0, 0]) === 0.55
-
-// const findUniq = (arr) => {
-//   return arr.find((v) => {
-//     return Math.max(v);
-//   });
-// };
-// console.log(findUniq([1, 1, 1, 2, 1, 1]));
-// console.log(findUniq([0, 0, 0.55, 0, 0]));
 
 // const findUniq = (array) => {
 //   return array.reduce((a, b) => {
@@ -68,6 +65,8 @@
 // };
 // console.log(findUniq([1, 1, 1, 2, 1, 1]));
 // // console.log(findUniq([0, 0, 0.55, 0, 0]));
+
+// ============================================================================
 
 // 2 toq valularni tartiblang
 
@@ -120,15 +119,36 @@
 // console.log(getAverage([1, 2, 3, 4, 5])); // 3);
 // console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2])); // 1)
 
-const removeEveryOther = (arr) => {
-  arr.map((a, b) => {
-    if (b % 2 === 0) {
-      console.log(a);
+// ============================================================================
+
+// const removeEveryOther = (arr) => {
+//   arr.map((a, b) => {
+//     if (b % 2 === 0) {
+//       console.log(a);
+//     }
+//   });
+// };
+
+// removeEveryOther(["Hello", "Goodbye", "Hello Again"]);
+// removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); //,=>  [1, 3, 5, 7, 9]);
+// removeEveryOther([[1, 2]]); //,=>  [[1, 2]]);
+// removeEveryOther([["Goodbye"], { Great: "Job" }]); //,=>  [['Goodbye']]);
+
+let uniqK = 0;
+let uniqK1 = 0;
+function uniq(items) {
+  items.filter((elem) => {
+    if (elem == uniqK) {
+      uniqK1 = elem;
+    } else {
+      if (uniqK == uniqK1) {
+        uniqK = elem;
+      }
     }
   });
-};
 
-removeEveryOther(["Hello", "Goodbye", "Hello Again"]);
-removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]); //,=>  [1, 3, 5, 7, 9]);
-removeEveryOther([[1, 2]]); //,=>  [[1, 2]]);
-removeEveryOther([["Goodbye"], { Great: "Job" }]); //,=>  [['Goodbye']]);
+  return uniqK;
+}
+
+console.log(uniq([1, 1, 1, 2, 1, 1]));
+console.log(uniq([0, 0, 0.55, 0, 0]));
