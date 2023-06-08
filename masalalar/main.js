@@ -283,13 +283,42 @@
 // let a = ["1, 2, 3, 4, 5, 6, 7"];
 // console.log(a.substr(2, 6));
 
+// const getNum = (a, b) => {
+//   let res = [];
+//   for (let i of a) {
+//     if (i !== b) {
+//       res.push(i);
+//     }
+//   }
+//   console.log(res);
+// };
+// getNum([1, 2, 3], 2);
+
 const getNum = (a, b) => {
-  let res = [];
-  for (let i of a) {
-    if (i !== b) {
-      res.push(i);
+  let list = "";
+  for (let i = -1; i < a.length; i++) {
+    list += `<tr>`;
+    for (let j = -1; j < b.length; j++) {
+      list += `
+        <th>${
+          i === -1
+            ? i === -1 && j === -1
+              ? "#"
+              : `${b[j]}`
+            : j === -1
+            ? `${a[i] * 1}`
+            : `<p>${a[i] * b[j]}</p>`
+        }</th>
+      `;
+      if (b.length === j) {
+        list += `</tr>`;
+      }
     }
   }
-  console.log(res);
+  document.getElementById("table").innerHTML = list;
 };
-getNum([1, 2, 3], 2);
+getNum([1, 2, 3, 4, 5, 6, 7, 8, 9], [1, 2, 3, 4, 5, 6, 7, 8, 9]);
+document.querySelector("#table").addEventListener("click", ({ target }) => {
+  console.log((target.style.opacity = "1"));
+  // const content = element.outerHTML;);
+});

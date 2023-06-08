@@ -104,27 +104,43 @@
 
 // 6 - misol
 
-let users = [
-  { id: 1, year: 1998, engine: 1, name: "Tico" },
-  { id: 2, year: 2005, engine: 1.2, name: "Matiz" },
-  { id: 3, year: 2010, engine: 1.6, name: "Gentra" },
-  { id: 4, year: 2010, engine: 1.5, name: "Cobalt" },
-  { id: 5, year: 2012, engine: 2, name: "Malibu" },
-  { id: 6, year: 2000, engine: 1.2, name: "Damas" },
-  { id: 7, year: 2018, engine: 2.4, name: "Tracker" },
-];
+// let users = [
+//   { id: 1, year: 1998, engine: 1, name: "Tico" },
+//   { id: 2, year: 2005, engine: 1.2, name: "Matiz" },
+//   { id: 3, year: 2010, engine: 1.6, name: "Gentra" },
+//   { id: 4, year: 2010, engine: 1.5, name: "Cobalt" },
+//   { id: 5, year: 2012, engine: 2, name: "Malibu" },
+//   { id: 6, year: 2000, engine: 1.2, name: "Damas" },
+//   { id: 7, year: 2018, engine: 2.4, name: "Tracker" },
+// ];
 
-const getCar = (str) => {
-  let res = str.map((i) => {
-    if (i.year <= 2000) {
-      i = { ...i, status: "eski" };
-    } else if (i.year >= 2001 && i.year <= 2010) {
-      i = { ...i, status: "o'rta" };
-    } else {
-      i = { ...i, status: "yangi" };
-    }
-    return i;
-  });
-  console.log(res);
-};
-getCar(users);
+// const getCar = (str) => {
+//   let res = str.map((i) => {
+//     if (i.year <= 2000) {
+//       i = { ...i, status: "eski" };
+//     } else if (i.year >= 2001 && i.year <= 2010) {
+//       i = { ...i, status: "o'rta" };
+//     } else {
+//       i = { ...i, status: "yangi" };
+//     }
+//     return i;
+//   });
+//   console.log(res);
+// };
+// getCar(users);
+
+// let num = [1, 2, 3, 4, 5];
+// let res = num.filter((value, index, array) => {
+//   console.log(index);
+// }, 0);
+// console.log(res);
+
+// let arr = [
+//   ["a", 2],
+//   ["b", 3],
+// ];
+
+// console.log(arr.flatMap());
+
+let sum = new Function("a", "b", "c", "d", "e", "f", "return a+b+c+d+e+f");
+console.log(sum(2, 3, 5, 3, 2, 1));
