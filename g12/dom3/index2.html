@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: relative;
+        border: 1px solid;
+        padding: 1rem;
+      }
+      h2 {
+        margin-left: 2rem;
+      }
+      img {
+        position: absolute;
+        top: 1.6rem;
+        left: 0.2rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Select</h2>
+      <img id="img" src="down.svg" onclick="fun()" />
+    </div>
+    <script>
+      let bool = false;
+      let img = document.getElementById("img");
+      function fun() {
+        bool = !bool;
+       
+      }
+    </script>
+  </body>
+</html>

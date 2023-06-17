@@ -1,0 +1,9 @@
+.container {
+    background-color: lightblue;
+    width: 450px;
+    height: 150px;
+    overflow: scroll;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+}

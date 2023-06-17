@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="search" />
+    <div id="body"></div>
+  </body>
+  <script>
+    let inputStlyle = document.querySelector("#search");
+    inputStlyle.style.csstext = `
+    width:500px;
+
+    `;
+    let arr = [
+      {
+        id: 1,
+        name: "Islom",
+      },
+      {
+        id: 2,
+        name: "Ziyod",
+      },
+    ];
+    let data = [
+      {
+        id: 1,
+        name: "Islom",
+      },
+      {
+        id: 2,
+        name: "Ziyod",
+      },
+    ];
+    document.querySelector("#search").oninput = ({ target: { value } }) => {
+      if (value === "") {
+        arr = data;
+      } else
+        arr = arr.filter(({ name }) =>
+          name.toLowerCase().includes(value.toLowerCase())
+        );
+      funDraw();
+    };
+    // bodyni ichiga arrayni ichidagi malumotlarni chizish uchun ishlatiladigan method
+    const funDraw = () => {
+      let list = ""; // bu arrayni ichidagi ma'lumotlarni html ko'dga o'tkazish uchun yatilgan varebel
+      arr?.map(({ id, name }) => {
+        list += ` <div> ${name} <button userid="${id}">delete</button></div>`;
+      });
+      document.getElementById("body").innerHTML = list;
+    };
+    // bodyni ichidagi ma'lumotlarni o'chirish uchun ishlatiladigan method
+    const funDelete = (id) => {
+      arr = arr.filter((i) => i.id !== id);
+      funDraw();
+    };
+    //  bodyni bosganda ichidagi buttonni malumotlarni olish uchun ishlatiladigan ko'd
+    document.querySelector("#body").addEventListener("click", ({ target }) => {
+      const id = +target.getAttribute("userid");
+      funDelete(id);
+    });
+    funDraw();
+  </script>
+</html>

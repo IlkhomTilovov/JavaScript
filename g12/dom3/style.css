@@ -1,0 +1,22 @@
+#polya {
+    position: relative;
+    margin: 200px auto;
+    width: 500px;
+    height: 480px;
+    background-image: url(futbolnoe-pole-razmeryi-i-razmetka-standartyi-fifa-2019-2-418x315.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#ball {
+    position: absolute;
+    width: 80px;
+    width: 80px;
+    top: 0px;
+    left: 0px;
+}
+
+#ball img {
+    width: 100%;
+    height: 100%;
+}

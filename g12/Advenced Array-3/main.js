@@ -81,7 +81,7 @@ let users = [
 // const addUser = (user) => {
 //   users = [...users, { id: users.length + 1, ...user }];
 // };
-// addUser({ year: 2019, name: "Webbrain" });
+// addUser({ year: 2019, name: "Webbrain" }); =================================================
 // console.log(users);
 
 // ======================================================================
@@ -134,36 +134,82 @@ let users = [
 // }
 // console.log(array.filter(isPrime));
 
-let list = [
-  { id: 1, name: "eshmat", title: "CTO" },
-  { id: 2, name: "toshmat", title: "CEO" },
-  { id: 5, name: "eshmat", title: "CTO" },
-  { id: 6, name: "toshmat", title: "CEO" },
-];
-const getTitle = (arr) => {
-  let arr2 = arr.reduce((obj, value) => {
-    let res = obj;
-    Object.keys(res).indexOf(value.title.toLowerCase()) === -1
-      ? (res[value.title.toLowerCase()] = [value])
-      : (res[value.title.toLowerCase()] = res[value.title.toLowerCase()].concat(
-          [value]
-        ));
-    return res;
-  }, {});
-  console.log(arr2);
-  //   console.log(arr2);
-  //   arr.map((i) => {
-  //     Object.keys(i).map((j) => {
-  //       if (j === "title") {
-  //         let key = i[j].toLowerCase();
+// let list = [
+//   { id: 1, name: "eshmat", title: "CTO" },
+//   { id: 2, name: "toshmat", title: "CEO" },
+//   { id: 5, name: "eshmat", title: "CTO" },
+//   { id: 6, name: "toshmat", title: "CEO" },
+// ];
+// const getTitle = (arr) => {
+//   let arr2 = arr.reduce((obj, value) => {
+//     let res = obj;
+//     Object.keys(res).indexOf(value.title.toLowerCase()) === -1
+//       ? (res[value.title.toLowerCase()] = [value])
+//       : (res[value.title.toLowerCase()] = res[value.title.toLowerCase()].concat(
+//           [value]
+//         ));
+//     return res;
+//   }, {});
+//   console.log(arr2);
+//   console.log(arr2);
+//   arr.map((i) => {
+//     Object.keys(i).map((j) => {
+//       if (j === "title") {
+//         let key = i[j].toLowerCase();
 
-  //         // if (Object.keys(result).indexOf(key) !== -1) {
-  //         //   console.log("salom");
-  //         //   result[key] = [];
-  //         // }
-  //       }
-  //     });
-  //   });
-  //   console.log(result);
+//         // if (Object.keys(result).indexOf(key) !== -1) {
+//         //   console.log("salom");
+//         //   result[key] = [];
+//         // }
+//       }
+//     });
+//   });
+//   console.log(result);
+// };
+// getTitle(list);
+
+// const upDateUsr = (id) => {
+//   return users.filter((value) => {
+//     if (value.id !== id) {
+//       return value;
+//     }
+//   });
+// };
+// console.log(upDateUsr(2));
+
+// const createUser = () => {
+//   let user = [
+//     ...users,
+//     { id: users.length + 1, year: 2019, engine: 2.6, name: "BMW" },
+//   ];
+//   console.log(user);
+// };
+// createUser();
+
+// const usersDelete = (id) => {
+//   let user = users.filter((v) => {
+//     if (v.id !== id) {
+//       console.log(v);
+//     }
+//   });
+//   console.log(user);
+// };
+// usersDelete(2);
+
+// ==============================================================================
+// const updateUsers = (user) => {
+//   return users.map((value) =>
+//     value.id == user.id ? { ...value, [user.type]: user.value } : value
+//   );
+// };
+// console.log(updateUsers({ id: 2, type: "name", value: "BMW" }));
+
+const updateUsr = (user) => {
+  users.map((v) => {
+    if (v.id == user.id) {
+      [...users, { ...v, [user.type]: user.v }];
+    }
+    console.log(v);
+  });
 };
-getTitle(list);
+updateUsr({ id: 4, type: "name", value: "BMW" });
